@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "label": "ID",
+        "active": true,
+        "name": "id",
+        "field": "id"
+    },
+    {
+        "id": 2,
+        "label": "Name",
+        "active": true,
+        "name": "name",
+        "field": "name"
+    },
+    {
+        "id": 3,
+        "label": "Brand",
+        "active": true,
+        "name": "brand",
+        "field": "brand"
+    },
+    {
+        "id": 4,
+        "label": "Color",
+        "active": true,
+        "name": "color",
+        "field": "color"
+    },
+    {
+        "id": 5,
+        "label": "Image",
+        "active": true,
+        "name": "image",
+        "field": "image"
+    },
+    {
+        "id": 6,
+        "label": "Price",
+        "active": true,
+        "name": "price",
+        "field": "price"
+    },
+    {
+        "id": 7,
+        "label": "Status",
+        "active": true,
+        "name": "status",
+        "field": "status"
+    }
+]
