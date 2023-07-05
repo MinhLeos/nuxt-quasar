@@ -179,6 +179,7 @@
               <q-pagination
                 v-model="currentPage"
                 :max="max"
+                :max-pages="6"
                 direction-links
                 boundary-links
                 icon-first="skip_previous"
