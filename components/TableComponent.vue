@@ -289,7 +289,9 @@ watch(
 <style lang="scss" scoped>
 .my-sticky-header-table {
   /* height or max-height is important */
+  // height: min-contentt;
   max-height: 430px;
+  height: 430px;
 
   .q-table__top,
   .q-table__bottom,
@@ -350,8 +352,15 @@ watch(
   }
 }
 .table {
-  &-body .q-td {
-    text-align: left !important;
+  &-body {
+    &:last-child .q-td {
+      border-bottom-width: 1px;
+    }
+    .q-td {
+      // border-collapse: collapse;
+      text-align: left !important;
+      // border: 0.5px solid;
+    }
   }
   &-header {
     position: sticky;

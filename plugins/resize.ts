@@ -95,6 +95,7 @@ class ResizableTable {
         div.style.position = "absolute";
         div.style.cursor = "col-resize";
         div.style.userSelect = "none";
+        // div.style.height = "100%";
         div.style.height = height + "px";
         div.style.zIndex = 100;
         return div;
@@ -109,7 +110,9 @@ class ResizableTable {
             this.removeListener(div);
             this.removeDiv(div);
         });
-        this.div?.splice(0, this.divs.length);
+        console.log('this.divs', this.divs);
+
+        this.divs.splice(0, this.divs.length);
     }
 
     paddingDiff(col) {
@@ -202,6 +205,7 @@ const TableResizable = {
 
     inserted(el, binding) {
         console.log("inserted");
+        handleUpdate(el, binding);
     },
 
     updated(el, binding) {
