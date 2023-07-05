@@ -4,7 +4,7 @@
         "name": "Product 1",
         "brand": "brand 1",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 1200,
         "status": "active"
     },
@@ -13,7 +13,7 @@
         "name": "Product 2",
         "brand": "brand 2",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12001,
         "status": "active"
     },
@@ -22,7 +22,7 @@
         "name": "Product 3",
         "brand": "brand 3",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12100,
         "status": "active"
     },
@@ -31,7 +31,7 @@
         "name": "Product 4",
         "brand": "brand 4",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12010,
         "status": "active"
     },
@@ -40,7 +40,7 @@
         "name": "Product 5",
         "brand": "brand 5",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12002,
         "status": "active"
     },
@@ -49,7 +49,7 @@
         "name": "Product 6",
         "brand": "brand 6",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12020,
         "status": "active"
     },
@@ -58,7 +58,7 @@
         "name": "Product 7",
         "brand": "brand 7",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12200,
         "status": "active"
     },
@@ -67,7 +67,7 @@
         "name": "Product 8",
         "brand": "brand 8",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12003,
         "status": "active"
     },
@@ -76,7 +76,7 @@
         "name": "Product 9",
         "brand": "brand 9",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12030,
         "status": "active"
     },
@@ -85,7 +85,7 @@
         "name": "Product 10",
         "brand": "brand 10",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12300,
         "status": "active"
     },
@@ -94,7 +94,7 @@
         "name": "Product 11",
         "brand": "brand 11",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12004,
         "status": "active"
     },
@@ -103,7 +103,7 @@
         "name": "Product 12",
         "brand": "brand 12",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12040,
         "status": "active"
     },
@@ -112,7 +112,7 @@
         "name": "Product 13",
         "brand": "brand 13",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12400,
         "status": "active"
     },
@@ -121,7 +121,7 @@
         "name": "Product 14",
         "brand": "brand 14",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12005,
         "status": "active"
     },
@@ -130,7 +130,7 @@
         "name": "Product 15",
         "brand": "brand 15",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12050,
         "status": "active"
     },
@@ -139,7 +139,7 @@
         "name": "Product 16",
         "brand": "brand 16",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12500,
         "status": "active"
     },
@@ -148,7 +148,7 @@
         "name": "Product 17",
         "brand": "brand 17",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12006,
         "status": "active"
     },
@@ -157,7 +157,7 @@
         "name": "Product 18",
         "brand": "brand 18",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12060,
         "status": "active"
     },
@@ -166,7 +166,7 @@
         "name": "Product 19",
         "brand": "brand 19",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12600,
         "status": "active"
     },
@@ -175,7 +175,7 @@
         "name": "Product 20",
         "brand": "brand 20",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12007,
         "status": "active"
     },
@@ -184,7 +184,7 @@
         "name": "Product 21",
         "brand": "brand 21",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12070,
         "status": "active"
     },
@@ -193,7 +193,7 @@
         "name": "Product 22",
         "brand": "brand 22",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12700,
         "status": "active"
     },
@@ -202,7 +202,7 @@
         "name": "Product 23",
         "brand": "brand 23",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12008,
         "status": "active"
     },
@@ -211,7 +211,7 @@
         "name": "Product 24",
         "brand": "brand 24",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12080,
         "status": "active"
     },
@@ -220,7 +220,7 @@
         "name": "Product 25",
         "brand": "brand 25",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12800,
         "status": "active"
     },
@@ -229,7 +229,7 @@
         "name": "Product 26",
         "brand": "brand 26",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12009,
         "status": "active"
     },
@@ -238,7 +238,7 @@
         "name": "Product 27",
         "brand": "brand 27",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12090,
         "status": "active"
     },
@@ -247,7 +247,7 @@
         "name": "Product 28",
         "brand": "brand 28",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 12900,
         "status": "active"
     },
@@ -256,7 +256,7 @@
         "name": "Product 29",
         "brand": "brand 29",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 1201,
         "status": "active"
     },
@@ -265,7 +265,7 @@
         "name": "Product 30",
         "brand": "brand 30",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 1202,
         "status": "active"
     },
@@ -274,7 +274,7 @@
         "name": "Product 31",
         "brand": "brand 31",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 1203,
         "status": "active"
     },
@@ -283,7 +283,7 @@
         "name": "Product 32",
         "brand": "brand 32",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 1204,
         "status": "active"
     },
@@ -292,7 +292,7 @@
         "name": "Product 33",
         "brand": "brand 33",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 1205,
         "status": "active"
     },
@@ -301,7 +301,7 @@
         "name": "Product 34",
         "brand": "brand 34",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 1206,
         "status": "active"
     },
@@ -310,7 +310,7 @@
         "name": "Product 35",
         "brand": "brand 35",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 1207,
         "status": "active"
     },
@@ -319,7 +319,7 @@
         "name": "Product 36",
         "brand": "brand 36",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 1208,
         "status": "active"
     },
@@ -328,7 +328,7 @@
         "name": "Product 37",
         "brand": "brand 37",
         "color": "Red",
-        "image": "https://bizweb.dktcdn.net/thumb/large/100/361/875/products/vitamine-500iu-healthy-care-200-vien.jpg?v=1665109431007",
+        "image": "/assets/image/image",
         "price": 1209,
         "status": "active"
     }

@@ -14,14 +14,16 @@
         :pagination="pagination"
         row-key="id"
         card-class="demo-class"
+        separator="cell"
         virtual-scroll
+        v-resize
       >
         <template v-slot:header>
-          <q-tr class="table-header">
+          <q-tr class="table-header border border-solid border-current">
             <q-th v-for="col in props.visibleColumns" :key="col" class="">
               <div
                 @click="handleSelectSortValue(col)"
-                class="flex flex-nowrap items-center justify-center custom"
+                class="flex flex-nowrap items-center justify-start custom"
                 :class="{
                   'cursor-pointer':
                     col !== 'color' && col !== 'image' && col !== 'status',
@@ -71,7 +73,13 @@
             <q-td key="brand" :props="props">
               <div class="text-pre-wrap">{{ props.row.brand }}</div>
               <q-popup-edit v-model="props.row.brand" v-slot="scope">
-                <q-input type="text" v-model="scope.value" dense autofocus />
+                <q-input
+                  type="text"
+                  v-model="scope.value"
+                  @keyup.enter="scope.set"
+                  dense
+                  autofocus
+                />
               </q-popup-edit>
             </q-td>
             <q-td key="color" :props="props">
@@ -281,14 +289,13 @@ watch(
 <style lang="scss" scoped>
 .my-sticky-header-table {
   /* height or max-height is important */
-  max-height: 500px;
+  max-height: 430px;
 
   .q-table__top,
   .q-table__bottom,
   thead tr:first-child th {
     /* bg color is important for th; just specify one */
     background-color: #00b4ff;
-    border-color: #00b4ff;
   }
   thead tr th {
     position: sticky;
@@ -344,10 +351,16 @@ watch(
 }
 .table {
   &-body .q-td {
-    text-align: center !important;
+    text-align: left !important;
   }
-  &-header th {
-    text-align: center !important;
+  &-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    th {
+      text-align: left !important;
+      // cursor: col-resize !important;
+    }
   }
 }
 </style>

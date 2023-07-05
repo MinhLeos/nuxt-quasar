@@ -8,6 +8,7 @@
       :columns="columns"
       row-key="name"
       binary-state-sort
+      v-resize
     >
       <template v-slot:body="props">
         <q-tr :props="props">
