@@ -20,6 +20,12 @@ export default defineEventHandler(async (event) => {
         result = (listData || []).slice(start, end);
         length = (listData || []).length;
     }
+    result = result.map(rs => {
+        return {
+            ...rs,
+            isSelect: false
+        }
+    });
     return {
         products: result,
         total: length

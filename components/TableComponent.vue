@@ -6,6 +6,7 @@
   <div id="q-app">
     <div class="q-pa-md">
       <q-table
+        ref="tableRef"
         class="my-sticky-header-table"
         title="Products"
         :rows="listProduct"
@@ -20,6 +21,14 @@
       >
         <template v-slot:header>
           <q-tr class="table-header border border-solid border-current">
+            <q-th>
+              <div class="q-pa-md">
+                <q-checkbox
+                  v-model="isSelectedAll"
+                  @update:model-value="handleSelectAll"
+                />
+              </div>
+            </q-th>
             <q-th v-for="col in props.visibleColumns" :key="col" class="">
               <div
                 @click="handleSelectSortValue(col)"
@@ -47,6 +56,14 @@
         </template>
         <template v-slot:body="props">
           <q-tr class="table-body" :props="props">
+            <q-td>
+              <div class="q-pa-md">
+                <q-checkbox
+                  v-model="props.row.isSelect"
+                  @update:model-value="handleSelectProduct"
+                />
+              </div>
+            </q-td>
             <q-td key="id" :props="props">
               {{ props.row.id }}
               <q-popup-edit v-model="props.row.id" v-slot="scope">
@@ -218,6 +235,13 @@ const total = ref(0);
 const sortValue = ref("id");
 const isAsc = ref(true);
 const isShowPopupSelectPageSize = ref(false);
+const tableRef = ref(null);
+const selected = ref([]);
+const lastIndex = ref(null);
+const isSelectedAll = ref(false);
+
+const $q = useQuasar();
+
 const { data: products, error } = await useFetch(
   `/api/products?pageSize=${pageSize.value}&currentPage=${currentPage.value}`
 );
@@ -263,9 +287,93 @@ const handleSelectPageSize = (value) => {
   isShowPopupSelectPageSize.value = false;
 };
 
+const handleSelectAll = (value, evt) => {
+  listProduct.value = listProduct.value.map((product) => {
+    return {
+      ...product,
+      isSelect: !!value,
+    };
+  });
+};
+
+const handleSelectProduct = () => {
+  let countSelected = 0;
+  listProduct.value.forEach((product) => {
+    if (product.isSelect) countSelected++;
+  });
+  if (countSelected === 0) {
+    isSelectedAll.value = false;
+  } else if (countSelected === listProduct.value.length) {
+    isSelectedAll.value = true;
+  } else {
+    isSelectedAll.value = null;
+  }
+};
+
+function getSelectedString() {
+  return selected.value.length === 0
+    ? ""
+    : `${selected.value.length} record${
+        selected.value.length > 1 ? "s" : ""
+      } selected of ${listProduct.length}`;
+}
+
+function onSelection({ rows, added, evt }) {
+  if (rows.length === 0 || tableRef.value === void 0) {
+    return;
+  }
+
+  const row = rows[0];
+  const filteredSortedRows = tableRef.value.filteredSortedRows;
+  const rowIndex = filteredSortedRows.indexOf(row);
+  const localLastIndex = lastIndex.value;
+
+  lastIndex.value = rowIndex;
+  document.getSelection().removeAllRanges();
+
+  if ($q.platform.is.mobile === true) {
+    evt = { ctrlKey: true };
+  } else if (
+    evt !== Object(evt) ||
+    (evt.shiftKey !== true && evt.ctrlKey !== true)
+  ) {
+    selected.value = added === true ? rows : [];
+    return;
+  }
+
+  const operateSelection =
+    added === true
+      ? (selRow) => {
+          const selectedIndex = selected.value.indexOf(selRow);
+          if (selectedIndex === -1) {
+            selected.value = selected.value.concat(selRow);
+          }
+        }
+      : (selRow) => {
+          const selectedIndex = selected.value.indexOf(selRow);
+          if (selectedIndex > -1) {
+            selected.value = selected.value
+              .slice(0, selectedIndex)
+              .concat(selected.value.slice(selectedIndex + 1));
+          }
+        };
+
+  if (localLastIndex === null || evt.shiftKey !== true) {
+    operateSelection(row);
+    return;
+  }
+
+  const from = localLastIndex < rowIndex ? localLastIndex : rowIndex;
+  const to = localLastIndex < rowIndex ? rowIndex : localLastIndex;
+  for (let i = from; i <= to; i += 1) {
+    operateSelection(filteredSortedRows[i]);
+  }
+}
+
 watch(
   [pageSize, currentPage, sortValue, isAsc],
   async (value) => {
+    isSelectedAll.value = false;
     const { data: products, error } = await useFetch(
       `/api/products?pageSize=${value[0]}&currentPage=${value[1]}&sortValue=${value[2]}&isAsc=${value[3]}`
     );
@@ -290,8 +398,7 @@ watch(
 .my-sticky-header-table {
   /* height or max-height is important */
   // height: min-contentt;
-  max-height: 430px;
-  height: 430px;
+  max-height: 670px;
 
   .q-table__top,
   .q-table__bottom,
